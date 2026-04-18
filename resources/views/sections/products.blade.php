@@ -46,6 +46,7 @@
             @endforeach
 
         </div>
+        
     </div>
 
     @include('sections.product-modal')

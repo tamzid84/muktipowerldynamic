@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         // Get all products with category (Eager Loading)
-        $products = Product::with('category')->latest()->get();
+        $products = Product::with('category')->latest()->paginate(9);
 
         // Get all categories
         $categories = Category::all();
